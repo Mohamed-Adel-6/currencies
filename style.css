@@ -1,0 +1,85 @@
+/* start global rules */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  scroll-behavior: smooth;
+  font-family: 'Cairo', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  background-image: url(./Countries\ and\ Currencies\ of\ the\ World.jpg);
+  background-repeat:no-repeat ;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button:active {
+  outline: none;
+}
+
+/* end global rules */
+.container{
+  padding: 20px;
+  margin: 50px auto;
+  width: 80%;
+  text-align: center;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.container h1 {
+  color: #17a2b8;
+}
+.container .prices{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin: 30px;
+}
+.container .prices .amount{
+  padding: 5px 15px;
+  color: black;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  border-bottom: 1px solid black;
+  font-size: 22px;
+  font-weight: bold;
+  width: 60%;
+  margin: 0 auto;
+}
+.container .prices div{
+  font-size: 25px;
+  border-bottom: 1px solid black;
+  padding: 7px 20px;
+  width: fit-content;
+  margin: 5px 0;
+}
+@media (max-width:767px) {
+  .container .prices div{
+    font-size: 20px;
+  }
+  .container .prices{
+  margin: 0;
+  }
+}
+.container .prices div span{
+  color: #17a2b8;
+  font-weight: bold;
+}
